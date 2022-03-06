@@ -4,8 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <section class="hero">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/bg-background.mp4" />
+          Your browser is not supported!
+        </video>
+      </div>
+      <header class="header">
+        <a href="">
+          <img
+            class="header__logo"
+            src="img/logo-header.png"
+            alt="logo du site ma recette"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="#">Ma recette</a>
+            </li>
+            <li class="hidden main-nav__list-item"><input type="text" /></li>
+            <li class="main-nav__list-item">
+              <a href="#"
+                ><ion-icon name="person-outline"></ion-icon>Se connecter /
+                Inscription</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-box">
+        <h1 class="hero-box__title">Bienvenue sur <span>Ma recette</span> !</h1>
+        <div class="hero-box__search">
+          <input
+            type="text"
+            placeholder="Chercher : tarte aux fraises, gâteau au chocolat, gratin dauphinois"
+          />
+          <ion-icon class="icon-search" name="search-outline"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

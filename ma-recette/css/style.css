@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif; }
+
+.hidden {
+  display: none; }
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(90, 90, 90, 0.1)); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.hero-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .hero-box__title {
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.2rem; }
+    .hero-box__title span {
+      color: #dabf85; }
+  .hero-box__search {
+    position: relative; }
+    .hero-box__search input {
+      width: 100%;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      border: none;
+      border-radius: 9px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+      .hero-box__search input::placeholder {
+        color: #34421e; }
+    .hero-box__search .icon-search {
+      font-size: 2.4rem;
+      position: absolute;
+      right: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.main-nav {
+  width: 100%; }
+  .main-nav__list {
+    list-style: none;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: space-between; }
+    .main-nav__list-item a:link,
+    .main-nav__list-item a:visited {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s; }
+      .main-nav__list-item a:link::before,
+      .main-nav__list-item a:visited::before {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #e6d4ae;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+    .main-nav__list-item a:hover,
+    .main-nav__list-item a:active {
+      color: #e6d4ae; }
+      .main-nav__list-item a:hover::before,
+      .main-nav__list-item a:active::before {
+        visibility: visible;
+        width: 100%; }
+
+.header {
+  display: flex;
+  height: 12.8rem;
+  align-items: center;
+  padding: 2.4rem 4.8rem; }
+  .header__logo {
+    height: 12.8rem; }

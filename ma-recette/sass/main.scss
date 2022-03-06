@@ -1,1 +1,12 @@
+@import "abstracts/variables";
+
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/accueil";
+@import "components/bg-video";
+
+@import "layout/hero-box";
+@import "layout/main-nav";
+@import "layout/header";
