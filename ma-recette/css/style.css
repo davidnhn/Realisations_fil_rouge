@@ -85,7 +85,7 @@ body {
       .main-nav__list-item a:visited::before {
         position: absolute;
         content: "";
-        bottom: -2px;
+        bottom: -1rem;
         left: 0;
         width: 0;
         height: 2px;
