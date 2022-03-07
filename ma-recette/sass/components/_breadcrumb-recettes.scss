@@ -1,0 +1,19 @@
+.recettes {
+  text-align: center;
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+
+    & li a {
+      font-size: 1.6rem;
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      background-color: $color-secondary-light-2;
+      padding: 1.2rem 1.6rem;
+    }
+  }
+}
