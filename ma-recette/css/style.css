@@ -77,8 +77,13 @@ body {
       display: inline-block;
       text-decoration: none;
       color: inherit;
-      background-color: #e6d4ae;
-      padding: 1.2rem 1.6rem; }
+      border: 2px solid #e6d4ae;
+      padding: 0.8rem 1.2rem;
+      border-radius: 100px;
+      transition: all 0.3s; }
+      .recettes__list li a:hover {
+        background-color: #e6d4ae;
+        color: #333; }
 
 .card {
   border-radius: 11px;
@@ -128,6 +133,57 @@ body {
     padding: 3.2rem 3.2rem; }
     .card__description_title {
       font-size: 1.8rem; }
+
+.pagination {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #374818;
+  gap: 0.8rem; }
+  .pagination__link:link, .pagination__link:visited {
+    font-size: 1.8rem;
+    display: flex;
+    height: 3.6rem;
+    width: 3.6rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: inherit;
+    transition: all 0.3s; }
+  .pagination__link:hover, .pagination__link:active {
+    background-color: #374818;
+    color: #e6d4ae; }
+  .pagination__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.4rem;
+    width: 4.4rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #374818;
+    transition: all 0.3s; }
+    .pagination__button:hover {
+      background-color: #374818; }
+      .pagination__button:hover .pagination__icon {
+        stroke: #e6d4ae; }
+  .pagination__icon {
+    stroke: #374818;
+    height: 2.4rem;
+    transition: all 0.3s; }
+  .pagination__dots {
+    font-size: 1.8rem;
+    display: flex;
+    height: 3.6rem;
+    width: 3.6rem;
+    align-items: center;
+    justify-content: center;
+    color: inherit; }
 
 .hero-box {
   position: absolute;
