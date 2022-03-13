@@ -268,3 +268,28 @@ body {
   row-gap: 9.6rem; }
   .grid__col--3 {
     grid-template-columns: repeat(3, 1fr); }
+
+.footer {
+  background-color: #474838;
+  color: #e6d4ae;
+  padding: 4.8rem 0; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__icons-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -2.4rem;
+    gap: 1.6rem;
+    margin-bottom: 1.2rem; }
+  .footer__icon-link:link, .footer__icon-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 3rem;
+    transition: all 0.3s; }
+  .footer__icon-link:hover {
+    transform: scale(1.5); }
+  .footer__text {
+    text-align: center;
+    font-size: 1.6rem; }
