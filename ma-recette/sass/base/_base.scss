@@ -13,4 +13,7 @@ html {
 body {
   box-sizing: border-box;
   color: $color-grey;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

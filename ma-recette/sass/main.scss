@@ -5,8 +5,9 @@
 @import "base/utilities";
 
 @import "pages/accueil";
-@import "components/bg-video";
+@import "pages/login";
 
+@import "components/bg-video";
 @import "components/breadcrumb-category";
 @import "components/heading-secondary";
 @import "components/breadcrumb-recettes";
@@ -16,5 +17,8 @@
 @import "layout/hero-box";
 @import "layout/main-nav";
 @import "layout/header";
+@import "layout/header-login";
 @import "layout/grid";
+@import "layout/form-login";
+@import "layout/form-subscribe";
 @import "layout/footer";

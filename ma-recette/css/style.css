@@ -10,7 +10,10 @@ html {
 
 body {
   box-sizing: border-box;
-  color: #444; }
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 body {
   font-family: "Raleway", sans-serif; }
@@ -30,6 +33,9 @@ body {
 .catalogue {
   width: 120rem;
   margin: 0 auto; }
+
+.main-login {
+  justify-items: center; }
 
 .bg-video {
   position: absolute;
@@ -259,6 +265,35 @@ body {
   .header__logo {
     height: 12.8rem; }
 
+.header-login {
+  background-color: rgba(34, 34, 34, 0.8); }
+  .header-login__input {
+    position: relative;
+    display: inline-block;
+    width: 70rem;
+    padding: 0.8rem 0 0.8rem 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .header-login__input::placeholder {
+      color: #34421e; }
+  .header-login .icon-search {
+    font-size: 3.2rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.6rem;
+    border-radius: 5px;
+    padding: 0 0.4rem;
+    transition: all 0.3s; }
+    .header-login .icon-search:hover {
+      background-color: #e6d4ae; }
+  .header-login__icon-box {
+    display: inline-block;
+    text-align: center;
+    position: relative; }
+
 .container {
   padding: 8rem 4.8rem; }
 
@@ -268,11 +303,118 @@ body {
   row-gap: 9.6rem; }
   .grid__col--3 {
     grid-template-columns: repeat(3, 1fr); }
+  .grid__col--2 {
+    grid-template-columns: repeat(2, 1fr); }
+
+.login {
+  text-align: center;
+  font-size: 1.8rem; }
+  .login__title {
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem; }
+  .login__info {
+    margin-bottom: 4.8rem; }
+  .login__facebook {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    background: none;
+    background-color: #3b5998;
+    text-transform: uppercase;
+    border-radius: 130px;
+    padding: 0.8rem 2.4rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem; }
+  .login__or {
+    font-weight: 600;
+    margin-bottom: 3.2rem; }
+  .login__email, .login__mdp {
+    width: 34rem;
+    height: 3rem;
+    padding: 1.2rem; }
+  .login__email {
+    margin-bottom: 1.2rem; }
+  .login__forgotten-password {
+    width: 74%;
+    margin-bottom: 3.2rem; }
+  .login__link:link, .login__link:visited {
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: inherit;
+    padding-bottom: 0.2rem; }
+  .login__connexion {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e6d4ae;
+    display: inline-block;
+    width: 51%;
+    background: none;
+    background-color: #374818;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 130px;
+    padding: 0.8rem 2.4rem; }
+
+.subscribe {
+  text-align: center;
+  font-size: 1.8rem; }
+  .subscribe__title {
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem; }
+  .subscribe__info {
+    margin-bottom: 4.8rem; }
+  .subscribe__facebook {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    background: none;
+    background-color: #3b5998;
+    text-transform: uppercase;
+    border-radius: 130px;
+    padding: 0.8rem 2.4rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem; }
+  .subscribe__or {
+    font-weight: 600;
+    margin-bottom: 3.2rem; }
+  .subscribe__firstname, .subscribe__lastname, .subscribe__email, .subscribe__pseudo, .subscribe__password {
+    height: 3rem;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem; }
+  .subscribe__firstname, .subscribe__lastname {
+    width: 27.25%; }
+  .subscribe__email, .subscribe__pseudo, .subscribe__password {
+    width: 55%; }
+  .subscribe__info-password {
+    font-size: 1.2rem;
+    margin-bottom: 3.2rem; }
+  .subscribe__inscription {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e6d4ae;
+    display: inline-block;
+    width: 51%;
+    background: none;
+    background-color: #374818;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 130px;
+    padding: 0.8rem 2.4rem; }
 
 .footer {
   background-color: #474838;
   color: #e6d4ae;
-  padding: 4.8rem 0; }
+  padding: 4.8rem 0;
+  margin-top: auto; }
   .footer__logo-box {
     text-align: center; }
   .footer__icons-list {

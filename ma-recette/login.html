@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header header-login">
+      <a href="index.html">
+        <img
+          class="header__logo"
+          src="img/logo-header.png"
+          alt="logo du site ma recette"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="index.html">Ma recette</a>
+          </li>
+          <div class="header-login__icon-box">
+            <input
+              type="text"
+              placeholder="Chercher : tarte aux fraises, gâteau au chocolat, gratin dauphinois"
+              class="header-login__input"
+            />
+            <ion-icon class="icon-search" name="search-outline"></ion-icon>
+          </div>
+
+          <li class="hidden main-nav__list-item"><input type="text" /></li>
+          <li class="main-nav__list-item">
+            <a href="login.html"
+              ><ion-icon name="person-outline"></ion-icon>Se connecter /
+              Inscription</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-login container grid grid__col--2">
+      <div class="login">
+        <h2 class="login__title">Déjà inscrit(e) ?</h2>
+        <p class="login__info">
+          Connectez-vous avec votre adresse mail et votre mot de passe ou avec
+          Facebook
+        </p>
+        <button type="submit" class="login__facebook">
+          Continuer avec Facebook <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <p class="login__or">ou</p>
+        <form action="" class="login__form">
+          <div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Votre adresse email"
+              class="login__email"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Votre mot de passe"
+              class="login__mdp"
+            />
+          </div>
+          <div class="login__forgotten-password">
+            <a href="#" class="login__link">J'ai oublié mon mot de passe</a>
+          </div>
+          <button type="submit" class="login__connexion">Je me connecte</button>
+        </form>
+      </div>
+      <div class="subscribe">
+        <h2 class="subscribe__title">Inscrivez-vous gratuitement !</h2>
+        <p class="subscribe__info">
+          Créez votre compte en 30 secondes et profitez de tous les services de
+          Ma recette
+        </p>
+        <button class="subscribe__facebook">
+          Continuer avec Facebook <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+        <p class="subscribe__or">ou</p>
+        <form action="" class="subscribe">
+          <div>
+            <input
+              type="text"
+              placeholder="Votre prénom"
+              class="subscribe__firstname"
+            />
+            <input
+              type="text"
+              placeholder="Votre nom"
+              class="subscribe__lastname"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              placeholder="Votre adresse email"
+              class="subscribe__email"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Choisissez un pseudo"
+              class="subscribe__pseudo"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="Votre mot de passe"
+              class="subscribe__password"
+            />
+          </div>
+          <p class="subscribe__info-password">
+            Le mot de passe doit contenir 8 caractères, une majuscule, une
+            minuscule et un chiffre.
+          </p>
+          <button class="subscribe__inscription">Je m'inscris</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="img/logo-header.png"
+          alt="logo ma recette"
+          class="footer__logo"
+        />
+      </div>
+      <div class="footer__icons-box">
+        <ul class="footer__icons-list">
+          <li class="footer_icon-item">
+            <a href="#" class="footer__icon-link"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li class="footer_icon-item">
+            <a href="#" class="footer__icon-link"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li class="footer_icon-item">
+            <a href="#" class="footer__icon-link"
+              ><ion-icon name="logo-pinterest"></ion-icon
+            ></a>
+          </li>
+          <li class="footer_icon-item">
+            <a href="#" class="footer__icon-link"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__text">Concocted with 🧡 by David NHN</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
