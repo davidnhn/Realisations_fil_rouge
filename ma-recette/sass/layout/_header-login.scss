@@ -1,5 +1,8 @@
 .header-login {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-image: linear-gradient(
+    rgba($color-primary-dark, 1) 0%,
+    rgba($color-primary-dark, 0.9) 90%
+  );
 
   &__input {
     position: relative;

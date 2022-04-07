@@ -266,7 +266,7 @@ body {
     height: 12.8rem; }
 
 .header-login {
-  background-color: rgba(34, 34, 34, 0.8); }
+  background-image: linear-gradient(#474838 0%, rgba(71, 72, 56, 0.9) 90%); }
   .header-login__input {
     position: relative;
     display: inline-block;
@@ -322,8 +322,8 @@ body {
     background: none;
     background-color: #3b5998;
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem;
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -349,16 +349,20 @@ body {
     padding-bottom: 0.2rem; }
   .login__connexion {
     font-size: 1.8rem;
-    font-weight: 500;
-    color: #e6d4ae;
+    font-weight: 600;
+    color: #474838;
+    border: 2px solid #474838;
     display: inline-block;
     width: 51%;
     background: none;
-    background-color: #374818;
-    border: none;
+    background-color: #e6d4ae;
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem; }
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s; }
+    .login__connexion:hover {
+      background-color: #474838;
+      color: #e6d4ae; }
 
 .subscribe {
   text-align: center;
@@ -376,8 +380,8 @@ body {
     background: none;
     background-color: #3b5998;
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem;
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -399,16 +403,20 @@ body {
     margin-bottom: 3.2rem; }
   .subscribe__inscription {
     font-size: 1.8rem;
-    font-weight: 500;
-    color: #e6d4ae;
+    font-weight: 600;
+    color: #474838;
+    border: 2px solid #474838;
     display: inline-block;
     width: 51%;
     background: none;
-    background-color: #374818;
-    border: none;
+    background-color: #e6d4ae;
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem; }
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s; }
+    .subscribe__inscription:hover {
+      background-color: #474838;
+      color: #e6d4ae; }
 
 .footer {
   background-color: #474838;

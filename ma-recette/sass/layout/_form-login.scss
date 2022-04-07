@@ -18,8 +18,8 @@
     background: none;
     background-color: #3b5998;
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem;
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -59,15 +59,22 @@
 
   &__connexion {
     font-size: 1.8rem;
-    font-weight: 500;
-    color: $color-secondary-light-2;
+    font-weight: 600;
+    color: $color-primary-dark;
+    border: 2px solid $color-primary-dark;
     display: inline-block;
     width: 51%;
     background: none;
-    background-color: $color-primary;
-    border: none;
+    background-color: $color-secondary-light-2;
+
     text-transform: uppercase;
-    border-radius: 130px;
-    padding: 0.8rem 2.4rem;
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-primary-dark;
+      color: $color-secondary-light-2;
+    }
   }
 }
