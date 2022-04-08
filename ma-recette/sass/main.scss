@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/base";
 @import "base/typography";
@@ -13,6 +14,7 @@
 @import "components/breadcrumb-recettes";
 @import "components/card-recipe";
 @import "components/pagination";
+@import "components/popup-recette";
 
 @import "layout/hero-box";
 @import "layout/main-nav";
