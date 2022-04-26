@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -380,25 +384,45 @@
         </div>
         <div class="popup-recette" id="recette">
           <div class="popup-recette__content">
+            <i class="fa-solid fa-print popup-recette__print"></i>
             <a href="#catalogue" class="popup-recette__close">&times;</a>
             <h2 class="popup-recette__titre">Blanquette de veau</h2>
             <div class="popup-recette__description">
               <div class="popup-recette__avis">
-                <div class="popup-recette__rating">5/5</div>
-                <div class="popup-recette__comments">18 commentaires</div>
+                <div class="popup-recette__rating">
+                  <span class="fa fa-star popup-recette__stars"></span>
+                  <span class="fa fa-star popup-recette__stars"></span>
+                  <span class="fa fa-star popup-recette__stars"></span>
+                  <span class="fa fa-star popup-recette__stars"></span>
+                  <span
+                    class="fa fa-star-half-stroke popup-recette__stars"
+                  ></span>
+                  <span>4.2/5</span>
+                </div>
+                <div class="popup-recette__comments">
+                  <span class="fa-solid fa-comment-dots"></span> 18 commentaires
+                </div>
               </div>
-              <div class="popup-recette_img-box">
-                <img src="" alt="" class="popup-recette-img" />
+              <div class="popup-recette__image-box">
+                <img
+                  src="https://assets.afcdn.com/recipe/20190529/93191_w1024h1024c1cx4330cy2886.jpg"
+                  alt="blanquette de veau"
+                  class="popup-recette__img"
+                />
               </div>
               <div class="popup-recette__indications">
-                <span>15min</span>
-                <span>Facile</span>
-                <span>€ Moyen</span>
+                <span class="fa-solid fa-clock">15 min</span>
+                <span class="fa-solid fa-hand-peace">Facile</span>
+                <span class="fa-solid">€Moyen</span>
               </div>
             </div>
-            <div class="popup-recette__btn">
-              <a href="" class="popup-recette__btn-save"></a>
-              <a href="" class="popup-recette__btn-fav"></a>
+            <div class="popup-recette__btn-box">
+              <button class="popup-recette__btn">
+                <span class="fa-regular fa-heart"></span> Ajouter aux Favoris
+              </button>
+              <button class="popup-recette__btn">
+                <span class="fa-regular fa-bookmark"></span> Sauvegarder
+              </button>
             </div>
             <div class="popup-recette__ingredients">
               <h3 class="popup-recette__ingredients-titre">Ingrédients</h3>
@@ -441,38 +465,38 @@
                   <label for="">sel</label>
                 </div>
               </div>
-              <div class="popup-recette__preparation">
-                <h3>Préparation</h3>
-                <div class="popup-recette__preparation-resume">
-                  <p>Temps total : 15 min</p>
-                </div>
-                <div class="popup-recette__steps">
-                  <h3>Étape 1</h3>
-                  <p>
-                    Salez et poivrez les cuisses de grenouille puis roulez-les
-                    dans la farine.
-                  </p>
-                  <h3>Étape 2</h3>
-                  <p>
-                    Faites-les revenir dans l'huile chaude pendant 5 minutes.
-                  </p>
-                  <h3>Étape 3</h3>
-                  <p>
-                    Faites fondre le beurre, retirez du feu et ajoutez l'ail et
-                    le persil haché. Laissez infuser à couvert quelques minutes.
-                  </p>
+            </div>
+            <div class="popup-recette__preparation">
+              <h3 class="popup-recette__preparation-titre">Préparation</h3>
+              <div class="popup-recette__preparation-resume">
+                <p>Temps total : 15 min</p>
+              </div>
+              <div class="popup-recette__steps">
+                <h3 class="popup-recette__steps-title">Étape 1</h3>
+                <p class="popup-recette__steps--paragraph">
+                  Salez et poivrez les cuisses de grenouille puis roulez-les
+                  dans la farine.
+                </p>
+                <h3 class="popup-recette__steps-title">Étape 2</h3>
+                <p class="popup-recette__steps--paragraph">
+                  Faites-les revenir dans l'huile chaude pendant 5 minutes.
+                </p>
+                <h3 class="popup-recette__steps-title">Étape 3</h3>
+                <p class="popup-recette__steps--paragraph">
+                  Faites fondre le beurre, retirez du feu et ajoutez l'ail et le
+                  persil haché. Laissez infuser à couvert quelques minutes.
+                </p>
 
-                  <h3>Étape 4</h3>
-                  <p>
-                    Versez les cuisses de grenouille dans le beurre
-                    persillé,couvrez et laissez reposer 2 minutes.
-                  </p>
-                  <h3>Étape 5</h3>
-                  <p>
-                    beurre, retirez du feu et ajoutez l'ail et le persil haché.
-                    Servez sur des assiettes préchauffées. Faites fondre le
-                  </p>
-                </div>
+                <h3 class="popup-recette__steps-title">Étape 4</h3>
+                <p class="popup-recette__steps--paragraph">
+                  Versez les cuisses de grenouille dans le beurre
+                  persillé,couvrez et laissez reposer 2 minutes.
+                </p>
+                <h3 class="popup-recette__steps-title">Étape 5</h3>
+                <p class="popup-recette__steps--paragraph">
+                  beurre, retirez du feu et ajoutez l'ail et le persil haché.
+                  Servez sur des assiettes préchauffées. Faites fondre le
+                </p>
               </div>
             </div>
           </div>
@@ -563,5 +587,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
